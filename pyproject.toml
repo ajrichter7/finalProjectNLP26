@@ -1,0 +1,40 @@
+[project]
+name = "materials-nlp"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = "==3.13.12"
+dependencies = [
+    "bertopic==0.17.4",
+    "click>=8.5.0",
+    "datasets==5.0.1",
+    "en-core-web-sm",
+    "fasttext==0.9.3",
+    "gensim==4.4.0",
+    "imbalanced-learn==0.14",
+    "kagglehub==1.0.2",
+    "matplotlib==3.11.1",
+    "nbformat>=4.2.0",
+    "numpy==2.5.2",
+    "pandas==3.0.5",
+    "plotly==6.9.0",
+    "pymupdf==1.28.0",
+    "scikit-learn==1.9.0",
+    "seaborn==0.13.2",
+    "spacy==3.8.14",
+    "torch==2.14.1",
+    "tqdm==4.70",
+    "langdetect==1.0.9",
+    "nltk==3.10.3",
+    "vadersentiment==3.3.1",
+    "seaborn==0.13.2",
+    "wordcloud==1.9.6",
+]
+
+[tool.uv.sources]
+en-core-web-sm = { url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.8.0/en_core_web_sm-3.8.0-py3-none-any.whl" }
+
+[tool.uv.workspace]
+members = [
+    "final/code",
+]
